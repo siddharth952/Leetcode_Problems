@@ -1,0 +1,16 @@
+
+class Solution {
+    public int numJewelsInStones(String J, String S) {
+        
+        int result = 0;
+        
+         Set set_J = new HashSet(); //Implement HashSet, does not allow duplicate elements
+        
+         for(char j: J.toCharArray()) set_J.add(j);                  //Converting String char to an array of char then add to HashMap
+         for(char s: S.toCharArray()) if(set_J.contains(s)) result++;                 //If in S found char.s from HashMap 
+         return result;
+        
+         
+    }
+        
+}
