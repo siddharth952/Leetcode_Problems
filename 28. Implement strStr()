@@ -14,6 +14,7 @@ class Solution {
             for (int j = 0; j < needle.length(); j++) {
                 if (haystack.charAt(i+j) != needle.charAt(j))
                     break;
+                //loop ran for all the chars of needle hence needle found in haystack!  return  initial position where subchars are found
                 if (j == needle.length()-1)
                     return i;
             }
